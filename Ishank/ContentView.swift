@@ -13,8 +13,8 @@ struct ContentView: View {
             ScrollView(.vertical){
                 ScrollView(.horizontal){
                     ForEach(1..<100){ i in
-                        VStack{
-                            HStack{
+                        LazyVStack{
+                            LazyHStack{
                                 ForEach(1..<100){ j in
                                     Text("Any String")
                                         .background(.gray)
